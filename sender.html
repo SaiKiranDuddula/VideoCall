@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="banner1">
+            <div class="content1">
+                <input placeholder="Enter username..."
+                        type="text"
+                        id="username-input" /><br>
+                <button type="button" onclick="sendUsername()"><span></span>Send</button>
+                <button type="button" onclick="startCall()"><span></span>Start Call</button>
+            </div>
+            <div id="video-call-div">
+                <video muted id="local-video" autoplay></video>
+                <video id="remote-video" autoplay></video>
+                <div class="call-action-div">
+                    <button type="button" onclick="muteVideo()"><span></span>Mute Video</button>
+                    <button type="button" onclick="muteAudio()"><span></span>Mute Audio</button>
+                </div>
+            </div>
+        </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>
